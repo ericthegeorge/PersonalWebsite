@@ -1,13 +1,15 @@
 import "bootstrap/dist/css/bootstrap.css";
 import { MouseEvent } from "react";
-function ListGroup() {
-  let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
-
+//requires items[] and heading string
+interface Props {
+  items: string[];
+  heading: string;
+}
+function ListGroup({ items, heading }: Props) {
   const handleClick = (event: MouseEvent) => console.log(event);
-
   return (
     <>
-      <h1>List</h1>
+      <h1>{heading}</h1>
       {items.length === 0 && <p>No item found</p>}
       <ul className="list-group">
         {items.map((item, index) => (
