@@ -1,14 +1,18 @@
 import "bootstrap/dist/css/bootstrap.css";
 import { useState } from "react";
-function ListGroup() {
-  let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
+interface Props {
+  items: string[];
+  heading: string;
+  onSelectItem: (item: string) => void;
+}
+function ListGroup({ items, heading, onSelectItem }: Props) {
   //hook allows to tap into builtin features of react
   const [selectedIndex, setSelectedIndex] = useState(-1);
   // arr[0] variable (selected index)
   // arr[1] updater function
   return (
     <>
-      <h1>List</h1>
+      <h1>{heading}</h1>
       {items.length === 0 && <p>No item found</p>}
       <ul className="list-group">
         {items.map((item, index) => (
@@ -21,6 +25,8 @@ function ListGroup() {
             key={item}
             onClick={() => {
               setSelectedIndex(index);
+              onSelectItem(item);
+
             }}
           >
             {item}
