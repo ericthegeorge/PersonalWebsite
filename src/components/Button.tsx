@@ -1,12 +1,17 @@
 import React from "react";
 
 interface Props {
-  text: string;
-  type: string;
+  colour?: "primary" | "secondary" | "danger";
+  children: string;
+  onClick: () => void;
 }
 
-const Button = ({ text, type }: Props) => {
-  return <div className="btn btn-primary">{text}</div>;
+const Button = ({ colour = "primary", children, onClick }: Props) => {
+  return (
+    <button className={"btn btn-" + colour} onClick={onClick}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;

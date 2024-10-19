@@ -5,7 +5,9 @@ function App() {
   };
   return (
     <div>
-      <Button text="this button" type="primary" />
+      <Button colour="primary" onClick={() => console.log("Clicked")}>
+        button
+      </Button>
     </div>
   );
 }
