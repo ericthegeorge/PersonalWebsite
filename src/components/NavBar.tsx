@@ -11,10 +11,14 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+
 import profileImage from "./images/pfp.png";
+import nameLogo from "./images/namelogo.webp";
+
+import About from "./About";
 // import AdbIcon from "@mui/icons-material/AdbIcon";
 
-const pages = ["About", "Personal Projects", "Skills", "Contact"];
+const pages = ["About", "Skills", "Personal Projects", "Contact"];
 const settings = ["S1", "S2", "S3", "S4"];
 
 function NavBar() {
@@ -41,28 +45,35 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#9e5b34" }}>
+    <AppBar position="static" sx={{ backgroundColor: "#130426" }}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar
+          disableGutters
+          sx={{
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
           <Typography
             variant="h6"
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
             sx={{
-              mr: 2,
+              // mr: "10rem",
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
+              fontFamily: "Helvetica",
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
+              justifyContent: "center",
             }}
           >
             <img
-              src={profileImage}
-              alt="ProfilePicture"
-              style={{ height: "60px", width: "auto", borderRadius: "50%" }}
+              src={nameLogo}
+              alt="Logo"
+              style={{ height: "3.5rem", width: "3.5rem", borderRadius: "50%" }}
             />
           </Typography>
 
@@ -118,18 +129,23 @@ function NavBar() {
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex", justifyContent: "center" },
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: "1.3rem", color: "white", display: "block" }}
               >
                 {page}
               </Button>
             ))}
           </Box>
-          <Box sx={{ flexGrow: 0 }}>
+          {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -159,7 +175,7 @@ function NavBar() {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
