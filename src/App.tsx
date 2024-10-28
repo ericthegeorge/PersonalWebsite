@@ -1,13 +1,12 @@
 import Button from "./components/Button";
+import NavBar from "./components/NavBar";
 function App() {
   const handleSelectedItem = (item: string) => {
     console.log(item);
   };
   return (
     <div>
-      <Button colour="primary" onClick={() => console.log("Clicked")}>
-        button
-      </Button>
+      <NavBar></NavBar>
     </div>
   );
 }
