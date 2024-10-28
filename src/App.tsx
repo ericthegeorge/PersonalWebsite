@@ -6,16 +6,23 @@ import Skills from "./components/Skills";
 import PersonalProjects from "./components/PersonalProjects";
 
 import "./App.css";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import backgroundGif from "./components/images/background.gif";
 
 function App() {
-  const handleSelectedItem = (item: string) => {
-    console.log(item);
+  const backgroundStyle: React.CSSProperties = {
+    backgroundImage: `url(${backgroundGif})`,
+    // backgroundSize: "cover",
+    backgroundRepeat: "revert-layer",
+    backgroundPosition: "center",
+    height: "100%",
+    width: "100%",
+    position: "relative",
+    overflow: "hidden",
   };
   return (
     <>
       <NavBar />
-      <div>
+      <div style={backgroundStyle}>
         <section id="about">
           <About />
         </section>

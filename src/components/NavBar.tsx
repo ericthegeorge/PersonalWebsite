@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -8,12 +8,19 @@ import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-
+import { Switch } from "@mui/material";
 import nameLogo from "./images/namelogo.webp";
+/**#130426 */
 
 const pages = ["About", "Skills", "Personal Projects", "Contact"];
 
 function NavBar() {
+  const [darkMode, setDarkMode] = useState(false);
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle("dark-mode", !darkMode); // Toggle dark mode class on body
+  };
+
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -27,7 +34,10 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#130426" }}>
+    <AppBar
+      position="static"
+      sx={{ backgroundColor: "#0e1330", width: "100%" }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ display: "flex", alignItems: "center" }}>
           <Typography
@@ -36,7 +46,7 @@ function NavBar() {
             component="a"
             href="#"
             sx={{
-              display: { xs: "none", md: "flex" },
+              display: { xs: "flex", md: "flex" },
               fontFamily: "Helvetica",
               fontWeight: 700,
               letterSpacing: ".3rem",
@@ -107,6 +117,33 @@ function NavBar() {
               </Button>
             ))}
           </Box>
+          <Typography
+            // variant="h6"
+
+            sx={{
+              textAlign: "center",
+              fontFamily: "Georgia",
+              display: { xs: "flex" },
+            }}
+          >
+            Dark Mode
+          </Typography>
+
+          <Switch
+            checked={darkMode}
+            onChange={toggleDarkMode}
+            sx={{
+              "&.Mui-checked": {
+                color: "primary.main", // Color when switched on
+              },
+              "&.Mui-checked + .MuiSwitch-track": {
+                backgroundColor: "secondary.main", // Track color when switched on
+              },
+              "& .MuiSwitch-track": {
+                backgroundColor: "#bfb9c9", // Track color when switched off
+              },
+            }}
+          />
         </Toolbar>
       </Container>
     </AppBar>
