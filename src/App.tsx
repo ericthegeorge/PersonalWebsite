@@ -1,4 +1,4 @@
-import Button from "./components/Button";
+import Button from "./components/About";
 import NavBar from "./components/NavBar";
 function App() {
   const handleSelectedItem = (item: string) => {
