@@ -11,6 +11,7 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import profileImage from "./images/pfp.png";
 // import AdbIcon from "@mui/icons-material/AdbIcon";
 
 const pages = ["About", "Personal Projects", "Skills", "Contact"];
@@ -40,7 +41,7 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: "#9e5b34" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -58,7 +59,11 @@ function NavBar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            <img
+              src={profileImage}
+              alt="ProfilePicture"
+              style={{ height: "60px", width: "auto", borderRadius: "50%" }}
+            />
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
