@@ -9,17 +9,22 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Switch } from "@mui/material";
-import nameLogo from "./images/namelogo.webp";
+import nameLogo from "./images/namelogo.png";
 /**#130426 */
 
 const pages = ["About", "Skills", "Personal Projects", "Contact"];
 
-function NavBar() {
-  const [darkMode, setDarkMode] = useState(false);
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    document.body.classList.toggle("dark-mode", !darkMode); // Toggle dark mode class on body
-  };
+interface NavBarProps {
+  toggleDarkMode: () => void; // Function to toggle dark mode
+  darkMode: boolean; // Current state of dark mode
+}
+
+function NavBar({ toggleDarkMode, darkMode }: NavBarProps) {
+  // const [darkMode, setDarkMode] = useState(false);
+  // const toggleDarkMode = () => {
+  //   setDarkMode(!darkMode);
+  //   document.body.classList.toggle("dark-mode", !darkMode); // Toggle dark mode class on body
+  // };
 
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
@@ -68,9 +73,7 @@ function NavBar() {
               aria-label="menu"
               onClick={handleOpenNavMenu}
               color="inherit"
-            >
-              Menu Icon
-            </IconButton>
+            ></IconButton>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
