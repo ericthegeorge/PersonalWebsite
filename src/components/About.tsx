@@ -6,19 +6,19 @@ import { keyframes } from "@mui/material";
 import "./About.css";
 const spinAnimation = keyframes`
   0% {
-    transform: rotateY(180deg) rotateX(0deg) rotateZ(0deg);
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
   }
   25% {
     transform: rotateY(90deg) rotateX(-10deg) rotateZ(-2deg);
   }
   50% {
-    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+    transform: rotateY(180deg) rotateX(0deg) rotateZ(0deg);
   }
   75% {
     transform: rotateY(90deg) rotateX(10deg) rotateZ(2deg);
   }
   100% {
-    transform: rotateY(180deg) rotateX(0deg) rotateZ(0deg);
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
   }
 `;
 
@@ -65,7 +65,7 @@ const About = () => {
             height: 200,
             animation: `${spinAnimation} 10s ease infinite`,
             perspective: "1000px",
-            animationDelay: "20s",
+            animationDelay: "0s",
           }}
         />
       </Grid2>
