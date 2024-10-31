@@ -8,7 +8,7 @@ function Contact() {
       <Grid2
         container
         spacing={2}
-        justifyContent="flex-end"
+        // justifyContent="flex-end"
         sx={{ backgroundColor: "transparent", paddingRight: 10 }}
       >
         <Avatar

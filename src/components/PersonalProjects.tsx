@@ -8,6 +8,7 @@ function PersonalProjects() {
       <Grid2
         container
         spacing={2}
+        justifyContent="flex-end"
         sx={{ backgroundColor: "transparent", paddingLeft: 10 }}
       >
         <Card

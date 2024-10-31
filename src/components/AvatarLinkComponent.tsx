@@ -11,8 +11,8 @@ const AvatarLink = ({ alt, src, href }: AvatarLinkProps) => (
       alt={alt}
       src={src}
       sx={{
-        width: "2rem",
-        height: "2rem",
+        width: "3.5rem",
+        height: "3.5rem",
         cursor: "pointer",
       }}
     />
