@@ -30,7 +30,7 @@ const spinAnimation = keyframes`
     transform: rotateY(90deg) rotateZ(2deg);
   }
   100% {
-    transform: rotateY(0deg) rotateZ(0deg);
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
   }
 `;
 
@@ -83,7 +83,7 @@ const About = () => {
               variant="h5"
               align="center"
               sx={{
-                fontFamily: '"Open Sans", cursive, sans-serif',
+                fontFamily: "Cormorant Garamond",
                 fontSize: 32,
               }}
             >
@@ -93,11 +93,13 @@ const About = () => {
               variant="body1"
               align="center"
               sx={{
-                fontFamily: '"Playfair Display", cursive, sans-serif',
+                fontFamily: "Cormorant Garamond",
                 fontSize: 20,
+                fontStyle: "oblique",
               }}
             >
-              Third Year Computer Science at University of Calgary. <br></br>
+              Third Year Computer Science Student at University of Calgary.{" "}
+              <br></br>
               Skilled developer ready for anything!
             </Typography>
             <Box
