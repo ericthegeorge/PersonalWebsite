@@ -14,6 +14,8 @@ import rt2pic from "../assets/rt2pic.png";
 import rt3pic from "../assets/rt3pic.png";
 import rt4pic from "../assets/rt4pic.png";
 import RayTracerPP from "./RayTracerPP";
+import EyeTimerPP from "./EyeTimerPP";
+import SCSPP from "./SCSPP";
 
 interface subProps {
   src: string;
@@ -79,6 +81,8 @@ function PersonalProjects() {
         </Card>
       </Grid2>
       <RayTracerPP />
+      <EyeTimerPP />
+      <SCSPP />
     </>
   );
 }
