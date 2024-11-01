@@ -9,46 +9,12 @@ import {
   useTheme,
 } from "@mui/material";
 
+import ImageWithCaption from "./ImageWithCaption";
+
 import rt1pic from "../assets/rt1pic.png";
 import rt2pic from "../assets/rt2pic.png";
 import rt3pic from "../assets/rt3pic.png";
 import rt4pic from "../assets/rt4pic.png";
-
-interface subProps {
-  src: string;
-  alt: string;
-  caption: string;
-  width: string;
-}
-const ImageWithCaption = ({ src, alt, caption, width }: subProps) => {
-  const theme = useTheme(); // Get the current theme
-
-  return (
-    <Box width={width}>
-      <img
-        src={src}
-        alt={alt}
-        style={{ width: width, height: "auto", borderRadius: "1rem" }}
-        width={"65 rem"}
-      />
-      <Typography
-        variant="body1"
-        display="block"
-        align="center"
-        sx={{
-          fontFamily: "Cormorant Garamond",
-          fontSize: 20,
-          fontStyle: "oblique",
-          fontWeight: "bold",
-          marginTop: "0.1rem",
-          color: theme.palette.text.primary,
-        }}
-      >
-        {caption}
-      </Typography>
-    </Box>
-  );
-};
 
 function RayTracerPP() {
   return (
