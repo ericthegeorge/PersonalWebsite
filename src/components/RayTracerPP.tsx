@@ -39,6 +39,7 @@ const ImageWithCaption = ({ src, alt, caption, width }: subProps) => {
           fontFamily: "Cormorant Garamond",
           fontSize: 20,
           fontStyle: "oblique",
+          fontWeight: "bold",
           marginTop: "0.1rem",
           color: theme.palette.text.primary,
         }}

@@ -9,16 +9,16 @@ import {
   useTheme,
 } from "@mui/material";
 
-import scs1pic from "../assets scs1pic.png";
+import scs1pic from "../assets/scs1pic.png";
 import scs2pic from "../assets/scs2pic.png";
 import scs3pic from "../assets/scs3pic.png";
 import scs4pic from "../assets/scs4pic.png";
-import scs5pic from "../assets scs1pic.png";
-import scs6pic from "../assets/scs2pic.png";
-import scs7pic from "../assets/scs3pic.png";
-import scs8pic from "../assets/scs4pic.png";
-import scs9pic from "../assets scs1pic.png";
-import scs10pic from "../assets/scs2pic.png";
+import scs5pic from "../assets/scs5pic.png";
+import scs6pic from "../assets/scs6pic.png";
+import scs7pic from "../assets/scs7pic.png";
+import scs8pic from "../assets/scs8pic.png";
+import scs9pic from "../assets/scs9pic.png";
+import scs10pic from "../assets/scs10pic.png";
 
 interface subProps {
   src: string;
@@ -45,6 +45,7 @@ const ImageWithCaption = ({ src, alt, caption, width }: subProps) => {
           fontFamily: "Cormorant Garamond",
           fontSize: 20,
           fontStyle: "oblique",
+          fontWeight: "bold",
           marginTop: "0.1rem",
           color: theme.palette.text.primary,
         }}
@@ -73,8 +74,8 @@ function SCSPP() {
           {/* Adjust the size as needed */}
           <ImageWithCaption
             src={scs1pic}
-            alt="Final Ray Tracer Result Image"
-            caption="A demo image 1600 x 900 of RTRandomFinal, my final iteration of this Ray Tracer."
+            alt="Welcome Screen."
+            caption="Welcome Screen"
             width={"65rem"}
           />
         </Grid2>
@@ -90,7 +91,7 @@ function SCSPP() {
               flexDirection: "column",
               display: "flex",
               width: "47rem",
-              height: "15rem", // Ensure card takes full width within its grid cell
+              height: "53rem", // Ensure card takes full width within its grid cell
             }}
           >
             <CardContent sx={{ flexGrow: 1 }}>
@@ -103,106 +104,27 @@ function SCSPP() {
                   textEmphasis: "bold",
                 }}
               >
-                Ray Tracer
+                Self-Checkout Simulator
               </Typography>
               <Typography
                 variant="body1"
                 align="center"
                 sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
               >
-                This Ray Tracer is designed to demonstrate how ray tracing works
-                at a basic level. Starting from the direction of simulated
-                light, to different refraction and reflection rates by material,
-                different shapes and objects, external cameras, glass, and
-                aperture level focusing. Created under the guidance of Carson
-                Cheng, my excellent high school teacher of Computer Science
-                30/31 AP.
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid2>
-        <Grid2>
-          {/* Adjust the size as needed */}
-          <Card
-            sx={{
-              backgroundColor: "rgba(255, 255, 255, 0)",
-              backdropFilter: "blur(7px)",
-              borderRadius: "10%",
-              flexDirection: "column",
-              display: "flex",
-              width: "60rem",
-              height: "15rem", // Ensure card takes full width within its grid cell
-            }}
-          >
-            <CardContent sx={{ flexGrow: 1 }}>
-              <Typography
-                variant="h4"
-                align="center"
-                sx={{ fontFamily: "Cormorant Garamond" }}
-              >
-                Beginning Process
-              </Typography>
-              <Typography
-                variant="body1"
-                align="center"
-                sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
-              >
-                Starting from simple 2D shapes to just appear on our swing
-                panels, a relatively basic start, we add features one by one to
-                reach our end goal of a Ray Tracer. Initially, much of the
-                process consisted of hard coding in features we would like to be
-                automatic, like the colours, shape, area, dimensions, location,
-                etc. The goal in the beginning parts is simply to open a path
-                for the future.
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid2>
-        <Grid2>
-          {/* Adjust the size as needed */}
-          <ImageWithCaption
-            src={scs2pic}
-            alt="A Red Square"
-            caption="The Red Square"
-            width={"20rem"}
-          />
-        </Grid2>
-        <Grid2>
-          {/* Adjust the size as needed */}
-          <ImageWithCaption
-            src={scs3pic}
-            alt="A 3D Image"
-            caption="First 3D Image"
-            width={"45rem"}
-          />
-        </Grid2>
-        <Grid2>
-          {/* Adjust the size as needed */}
-          <Card
-            sx={{
-              backgroundColor: "rgba(255, 255, 255, 0)",
-              backdropFilter: "blur(7px)",
-              borderRadius: "10%",
-              flexDirection: "column",
-              display: "flex",
-              width: "47rem",
-              height: "33rem", // Ensure card takes full width within its grid cell
-            }}
-          >
-            <CardContent>
-              <Typography
-                variant="h4"
-                align="center"
-                sx={{ fontFamily: "Cormorant Garamond" }}
-              >
-                Into 3D
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
-              >
-                The difficulty only picks up when rendering 3D shapes. As
-                compared to 2D, there are many more aspects to consider:
+                This project was made for the SENG300 Final Group Project. It
+                attempts to emulate not only the software side involved in a
+                regular self-checkout, but also the hardware side, the attendant
+                side, and of course, the user side. The goal is to emulate a
+                virtual self-checkout system, as a learning proof of concept of
+                the design processes in the 'real-world'. That is, we would
+                receive more info from management and the hardware team as we
+                created the project. We would have to meet the criteria the
+                'client' (our professor, Dr. Walker) demanded, from regular
+                client meetings to ascertain the product he desired. Since
+                hardware is expensive, we would have to simulate the hardware
+                inputs as we developed our software as well, so as to ensure if
+                effectiveness. Please find below an abridged version of the
+                implemented features:
               </Typography>
               <ul style={{ paddingLeft: "20px" }}>
                 {" "}
@@ -212,7 +134,7 @@ function SCSPP() {
                     variant="body1"
                     sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
                   >
-                    Coordinates in 3D
+                    Virtual barcodes and barcode scanning.
                   </Typography>
                 </li>
                 <li>
@@ -220,7 +142,7 @@ function SCSPP() {
                     variant="body1"
                     sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
                   >
-                    Ray tracing past an object
+                    Local databasing.
                   </Typography>
                 </li>
                 <li>
@@ -228,7 +150,7 @@ function SCSPP() {
                     variant="body1"
                     sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
                   >
-                    Ray normals on an object and angle of reflection
+                    Simulated banknotes of several denominations.
                   </Typography>
                 </li>
                 <li>
@@ -236,7 +158,7 @@ function SCSPP() {
                     variant="body1"
                     sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
                   >
-                    Degree of refraction and reflection
+                    Tiered checkouts.
                   </Typography>
                 </li>
                 <li>
@@ -244,7 +166,7 @@ function SCSPP() {
                     variant="body1"
                     sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
                   >
-                    Antialiasing
+                    Membership and rewards system.
                   </Typography>
                 </li>
                 <li>
@@ -252,65 +174,7 @@ function SCSPP() {
                     variant="body1"
                     sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
                   >
-                    etc.
-                  </Typography>
-                </li>
-              </ul>
-              <Typography
-                variant="body1"
-                sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
-              >
-                It's important to note that while some of these could have been
-                considered in 2D, it would be far less consequential to the 2D
-                results by nature. Implementing these features took considerable
-                amount of time. Fortunately, I had my instructor's guidance when
-                necessary. Overall, this part of the process is where I learned
-                the most about how ray tracing worked, and why it was so
-                computationally expensive. It gave me a deeper profundity for
-                the field of Computer Graphics.
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid2>
-        <Grid2>
-          {/* Adjust the size as needed */}
-          <Card
-            sx={{
-              backgroundColor: "rgba(255, 255, 255, 0)",
-              backdropFilter: "blur(7px)",
-              borderRadius: "10%",
-              flexDirection: "column",
-              display: "flex",
-              width: "47rem",
-              height: "33rem", // Ensure card takes full width within its grid cell
-            }}
-          >
-            <CardContent>
-              <Typography
-                variant="h4"
-                align="center"
-                sx={{ fontFamily: "Cormorant Garamond" }}
-              >
-                Finishing Touches
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
-              >
-                Although the bulk of the ray tracer has passed, it could not be
-                complete without some fundamental features. After all, there is
-                more to vision then just light bouncing around until it hits our
-                retina. Important features here consisted of:
-              </Typography>
-              <ul style={{ paddingLeft: "20px" }}>
-                {" "}
-                {/* Add padding for indentation */}
-                <li>
-                  <Typography
-                    variant="body1"
-                    sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
-                  >
-                    Ray Diffusion
+                    Alternative ways to checkout items (PLU, Visual Catalogue).
                   </Typography>
                 </li>
                 <li>
@@ -318,7 +182,7 @@ function SCSPP() {
                     variant="body1"
                     sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
                   >
-                    Lambertian reflection
+                    Weight checking.
                   </Typography>
                 </li>
                 <li>
@@ -326,7 +190,8 @@ function SCSPP() {
                     variant="body1"
                     sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
                   >
-                    Glass
+                    Coin depositing, including the coin receival process from
+                    slot to storage to tray, and change.
                   </Typography>
                 </li>
                 <li>
@@ -334,7 +199,7 @@ function SCSPP() {
                     variant="body1"
                     sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
                   >
-                    Moveable Camera
+                    Power utility and power interruption handling.
                   </Typography>
                 </li>
                 <li>
@@ -342,72 +207,117 @@ function SCSPP() {
                     variant="body1"
                     sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
                   >
-                    Focus levels
+                    Maintenance system.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    variant="body1"
+                    sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
+                  >
+                    Attendant manual override.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    variant="body1"
+                    sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
+                  >
+                    and more...
                   </Typography>
                 </li>
               </ul>
 
               <Typography
                 variant="body1"
+                align="center"
                 sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
               >
-                Usually, ray tracing is used to provide a higher sense of
-                realism in the graphics. If there was not such an advantage to
-                it, it's unlikely it would be used often. Pre-loaded creations
-                would be much more sensible. It's because with ray-tracing we
-                approach reality at a level different from manual creations. We
-                can simulate the environment to a great degree, and perhaps
-                fully immerse the user into the graphic. These features are at
-                minimum necessary for such a level of ray tracing.
+                Note that this was done with the Java Swing GUI framework, as
+                the emphasis was on the logic more so than the UI.
               </Typography>
             </CardContent>
           </Card>
         </Grid2>
         <Grid2>
-          {/* Adjust the size as needed */}
           <ImageWithCaption
-            src={scs4pic}
-            alt="A Complex Ray Tracing of a Sphere"
-            caption="New Features"
-            width={"45rem"}
+            src={scs2pic} // Initial Screen for Attendants
+            alt="Initial Screen for Attendants"
+            caption="Initial Screen for Attendants"
+            width={"50rem"}
           />
         </Grid2>
+
         <Grid2>
-          {/* Adjust the size as needed */}
-          <Card
-            sx={{
-              backgroundColor: "rgba(255, 255, 255, 0)",
-              backdropFilter: "blur(7px)",
-              borderRadius: "10%",
-              flexDirection: "column",
-              display: "flex",
-              width: "47rem",
-              height: "15rem", // Ensure card takes full width within its grid cell
-            }}
-          >
-            <CardContent sx={{ flexGrow: 1 }}>
-              <Typography
-                variant="h4"
-                align="center"
-                sx={{ fontFamily: "Cormorant Garamond" }}
-              >
-                Concluding Thoughts
-              </Typography>
-              <Typography
-                variant="body1"
-                align="center"
-                sx={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}
-              >
-                This project was very enjoyable, and I recommend anyone to just
-                dig right into it. At first I was taken aback by the scale of
-                this. I didn't think implementing a Ray Tracer from scratch was
-                such a simple thing. But given enough time and passion, it was
-                more than feasible. I'm sure you can too. The more you learn,
-                the more you want to learn. And that just makes this all the
-                more fun.
-              </Typography>
-            </CardContent>
-          </Card>
+          <ImageWithCaption
+            src={scs3pic} // Attendant Maintenance
+            alt="Attendant Maintenance"
+            caption="Attendant Maintenance"
+            width={"50rem"}
+          />
+        </Grid2>
+
+        <Grid2>
+          <ImageWithCaption
+            src={scs4pic} // Customer Screen When Adding Items
+            alt="Customer Screen When Adding Items"
+            caption="Customer Screen When Adding Items"
+            width={"50rem"}
+          />
+        </Grid2>
+
+        <Grid2>
+          <ImageWithCaption
+            src={scs5pic} // After Scanning an Item
+            alt="After Scanning an Item"
+            caption="After Scanning an Item"
+            width={"50rem"}
+          />
+        </Grid2>
+
+        <Grid2>
+          <ImageWithCaption
+            src={scs6pic} // Weight Discrepancy Since the Customer Did Not Move the Item to the Bagging Area
+            alt="Weight Discrepancy Since the Customer Did Not Move the Item to the Bagging Area"
+            caption="Weight Discrepancy Since the Customer Did Not Move the Item to the Bagging Area"
+            width={"50rem"}
+          />
+        </Grid2>
+
+        <Grid2>
+          <ImageWithCaption
+            src={scs7pic} // Adding Items by Their PLU
+            alt="Adding Items by Their PLU"
+            caption="Adding Items by Their PLU"
+            width={"50rem"}
+          />
+        </Grid2>
+
+        <Grid2>
+          <ImageWithCaption
+            src={scs8pic} // Customer Flagged Station 1, Marked on Attendant Side
+            alt="Customer Flagged Station 1, Marked on Attendant Side"
+            caption="Customer Flagged Station 1, Marked on Attendant Side"
+            width={"50rem"}
+          />
+        </Grid2>
+
+        <Grid2>
+          <ImageWithCaption
+            src={scs9pic} // Payment Screen
+            alt="Payment Screen"
+            caption="Payment Screen"
+            width={"50rem"}
+          />
+        </Grid2>
+
+        <Grid2>
+          <ImageWithCaption
+            src={scs10pic} // Receipt
+            alt="Receipt"
+            caption="Receipt"
+            width={"30rem"}
+          />
         </Grid2>
       </Grid2>
     </>
