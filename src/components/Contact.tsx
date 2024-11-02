@@ -21,6 +21,7 @@ function Contact() {
         spacing={2}
         display={"flex"}
         justifyContent={"center"}
+        marginTop={"12px"}
         sx={{ backgroundColor: "transparent" }}
       >
         <Card

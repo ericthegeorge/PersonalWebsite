@@ -25,7 +25,7 @@ function EyeTimerPP() {
         display={"flex"}
         justifyContent={"center"}
         alignItems={"center"} // Align items vertically
-        marginTop={"16px"}
+        marginTop={"32px"}
         sx={{ backgroundColor: "transparent" }}
       >
         {/* Image Column */}
@@ -36,7 +36,7 @@ function EyeTimerPP() {
             src={et1pic}
             alt="Initial Swing Face of the Timer."
             caption="The Initial Opening Screen"
-            width={"65rem"}
+            width={"45vw"}
           />
         </Grid2>
 
@@ -50,8 +50,8 @@ function EyeTimerPP() {
               borderRadius: "10%",
               flexDirection: "column",
               display: "flex",
-              width: "47rem",
-              height: "29rem", // Ensure card takes full width within its grid cell
+              width: "45vw",
+              height: "auto", // Ensure card takes full width within its grid cell
             }}
           >
             <CardContent sx={{ flexGrow: 1 }}>
@@ -97,7 +97,7 @@ function EyeTimerPP() {
             src={et2pic}
             alt="Running face of the Eye Timer GUI."
             caption="Running Mode"
-            width={"65rem"}
+            width={"70vw"}
           />
         </Grid2>
         <Grid2>
@@ -106,7 +106,7 @@ function EyeTimerPP() {
             src={et3pic}
             alt="Showing record of user logs."
             caption="After Some User Logs"
-            width={"65rem"}
+            width={"70vw"}
           />
         </Grid2>
         <Grid2>
@@ -115,7 +115,7 @@ function EyeTimerPP() {
             src={et4pic}
             alt="Monitor showing 68MB to run this program."
             caption="The Flagged Issue: Excessive Memory Usage for a Relatively Simple Program"
-            width={"40rem"}
+            width={"70vw"}
           />
         </Grid2>
       </Grid2>

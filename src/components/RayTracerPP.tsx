@@ -15,6 +15,7 @@ import rt1pic from "../assets/rt1pic.png";
 import rt2pic from "../assets/rt2pic.png";
 import rt3pic from "../assets/rt3pic.png";
 import rt4pic from "../assets/rt4pic.png";
+import { display } from "@mui/system";
 
 function RayTracerPP() {
   return (
@@ -36,7 +37,7 @@ function RayTracerPP() {
             src={rt1pic}
             alt="Final Ray Tracer Result Image"
             caption="A demo image 1600 x 900 of RTRandomFinal, my final iteration of this Ray Tracer."
-            width={"65rem"}
+            width={"45vw"}
           />
         </Grid2>
 
@@ -50,8 +51,8 @@ function RayTracerPP() {
               borderRadius: "10%",
               flexDirection: "column",
               display: "flex",
-              width: "47rem",
-              height: "15rem", // Ensure card takes full width within its grid cell
+              width: "45vw",
+              height: "auto", // Ensure card takes full width within its grid cell
             }}
           >
             <CardContent sx={{ flexGrow: 1 }}>
@@ -91,8 +92,8 @@ function RayTracerPP() {
               borderRadius: "10%",
               flexDirection: "column",
               display: "flex",
-              width: "60rem",
-              height: "15rem", // Ensure card takes full width within its grid cell
+              width: "60vw",
+              height: "auto", // Ensure card takes full width within its grid cell
             }}
           >
             <CardContent sx={{ flexGrow: 1 }}>
@@ -125,7 +126,7 @@ function RayTracerPP() {
             src={rt2pic}
             alt="A Red Square"
             caption="The Red Square"
-            width={"20rem"}
+            width={"20vw"}
           />
         </Grid2>
         <Grid2>
@@ -134,7 +135,7 @@ function RayTracerPP() {
             src={rt3pic}
             alt="A 3D Image"
             caption="First 3D Image"
-            width={"45rem"}
+            width={"40vw"}
           />
         </Grid2>
         <Grid2>
@@ -146,8 +147,8 @@ function RayTracerPP() {
               borderRadius: "10%",
               flexDirection: "column",
               display: "flex",
-              width: "47rem",
-              height: "33rem", // Ensure card takes full width within its grid cell
+              width: "50vw",
+              height: "auto", // Ensure card takes full width within its grid cell
             }}
           >
             <CardContent>
@@ -242,8 +243,8 @@ function RayTracerPP() {
               borderRadius: "10%",
               flexDirection: "column",
               display: "flex",
-              width: "47rem",
-              height: "33rem", // Ensure card takes full width within its grid cell
+              width: "50vw",
+              height: "auto", // Ensure card takes full width within its grid cell
             }}
           >
             <CardContent>
@@ -330,7 +331,7 @@ function RayTracerPP() {
             src={rt4pic}
             alt="A Complex Ray Tracing of a Sphere"
             caption="New Features"
-            width={"45rem"}
+            width={"40vw"}
           />
         </Grid2>
         <Grid2>
@@ -342,8 +343,8 @@ function RayTracerPP() {
               borderRadius: "10%",
               flexDirection: "column",
               display: "flex",
-              width: "47rem",
-              height: "15rem", // Ensure card takes full width within its grid cell
+              width: "75vw",
+              height: "auto", // Ensure card takes full width within its grid cell
             }}
           >
             <CardContent sx={{ flexGrow: 1 }}>

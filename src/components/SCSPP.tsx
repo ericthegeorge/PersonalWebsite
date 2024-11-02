@@ -42,7 +42,7 @@ function SCSPP() {
             src={scs1pic}
             alt="Welcome Screen."
             caption="Welcome Screen"
-            width={"65rem"}
+            width={"45vw"}
           />
         </Grid2>
 
@@ -56,8 +56,8 @@ function SCSPP() {
               borderRadius: "10%",
               flexDirection: "column",
               display: "flex",
-              width: "47rem",
-              height: "53rem", // Ensure card takes full width within its grid cell
+              width: "45vw",
+              height: "auto", // Ensure card takes full width within its grid cell
             }}
           >
             <CardContent sx={{ flexGrow: 1 }}>
@@ -210,7 +210,7 @@ function SCSPP() {
             src={scs2pic} // Initial Screen for Attendants
             alt="Initial Screen for Attendants"
             caption="Initial Screen for Attendants"
-            width={"50rem"}
+            width={"45vw"}
           />
         </Grid2>
 
@@ -219,7 +219,7 @@ function SCSPP() {
             src={scs3pic} // Attendant Maintenance
             alt="Attendant Maintenance"
             caption="Attendant Maintenance"
-            width={"50rem"}
+            width={"45vw"}
           />
         </Grid2>
 
@@ -228,7 +228,7 @@ function SCSPP() {
             src={scs4pic} // Customer Screen When Adding Items
             alt="Customer Screen When Adding Items"
             caption="Customer Screen When Adding Items"
-            width={"50rem"}
+            width={"45vw"}
           />
         </Grid2>
 
@@ -237,7 +237,7 @@ function SCSPP() {
             src={scs5pic} // After Scanning an Item
             alt="After Scanning an Item"
             caption="After Scanning an Item"
-            width={"50rem"}
+            width={"45vw"}
           />
         </Grid2>
 
@@ -246,7 +246,7 @@ function SCSPP() {
             src={scs6pic} // Weight Discrepancy Since the Customer Did Not Move the Item to the Bagging Area
             alt="Weight Discrepancy Since the Customer Did Not Move the Item to the Bagging Area"
             caption="Weight Discrepancy Since the Customer Did Not Move the Item to the Bagging Area"
-            width={"50rem"}
+            width={"45vw"}
           />
         </Grid2>
 
@@ -255,7 +255,7 @@ function SCSPP() {
             src={scs7pic} // Adding Items by Their PLU
             alt="Adding Items by Their PLU"
             caption="Adding Items by Their PLU"
-            width={"50rem"}
+            width={"45vw"}
           />
         </Grid2>
 
@@ -264,7 +264,7 @@ function SCSPP() {
             src={scs8pic} // Customer Flagged Station 1, Marked on Attendant Side
             alt="Customer Flagged Station 1, Marked on Attendant Side"
             caption="Customer Flagged Station 1, Marked on Attendant Side"
-            width={"50rem"}
+            width={"45vw"}
           />
         </Grid2>
 
@@ -273,7 +273,7 @@ function SCSPP() {
             src={scs9pic} // Payment Screen
             alt="Payment Screen"
             caption="Payment Screen"
-            width={"50rem"}
+            width={"45vw"}
           />
         </Grid2>
 
@@ -282,7 +282,7 @@ function SCSPP() {
             src={scs10pic} // Receipt
             alt="Receipt"
             caption="Receipt"
-            width={"30rem"}
+            width={"45vw"}
           />
         </Grid2>
       </Grid2>
