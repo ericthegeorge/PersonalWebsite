@@ -37,6 +37,10 @@ import eclipseLogo from "./images/eclipselogo.jpg";
 import excelLogo from "./images/excellogo.jpg";
 import linuxLogo from "./images/linuxlogo.jpg";
 import raspberryPiLogo from "./images/raspberrypilogo.jpg";
+import dartLogo from "./images/dartLogo.png";
+import flutterLogo from "./images/flutterLogo.png";
+import djangoLogo from "./images/djangoLogo.png";
+import mysqlLogo from "./images/mysqlLogo.png";
 
 function Skills() {
   return (
@@ -160,6 +164,8 @@ function Skills() {
                 href="https://en.wikipedia.org/wiki/R_(programming_language)"
               />
 
+              <AvatarLink alt="Dart" src={dartLogo} href="https://dart.dev/" />
+
               <Typography
                 variant="body1"
                 align="center"
@@ -199,6 +205,24 @@ function Skills() {
                 href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
               />
               <AvatarLink alt="MUI" src={muiLogo} href="https://mui.com/" />
+
+              <AvatarLink
+                alt="Flutter"
+                src={flutterLogo}
+                href="https://flutter.dev/"
+              />
+
+              <AvatarLink
+                alt="Django"
+                src={djangoLogo}
+                href="https://www.djangoproject.com/"
+              />
+
+              <AvatarLink
+                alt="MySQL"
+                src={mysqlLogo}
+                href="https://www.mysql.com/"
+              />
 
               <Typography
                 variant="body1"
