@@ -9,13 +9,14 @@ import {
   useTheme,
 } from "@mui/material";
 
-import rt1pic from "../assets/rt1pic.png";
-import rt2pic from "../assets/rt2pic.png";
-import rt3pic from "../assets/rt3pic.png";
-import rt4pic from "../assets/rt4pic.png";
+// import rt1pic from "../assets/rt1pic.png";
+// import rt2pic from "../assets/rt2pic.png";
+// import rt3pic from "../assets/rt3pic.png";
+// import rt4pic from "../assets/rt4pic.png";
 import RayTracerPP from "./RayTracerPP";
 import EyeTimerPP from "./EyeTimerPP";
 import SCSPP from "./SCSPP";
+import CVOPP from "./CVOPP";
 
 interface subProps {
   src: string;
@@ -80,6 +81,7 @@ function PersonalProjects() {
           </CardContent>
         </Card>
       </Grid2>
+      <CVOPP />
       <RayTracerPP />
       <EyeTimerPP />
       <SCSPP />
