@@ -7,7 +7,7 @@ import {
   Card,
   Box,
 } from "@mui/material";
-import pfp from "./images/pfp.png";
+import pfp from "./images/pfp.jpg";
 import githublogo from "./images/githublogo.jpg";
 import linkedinlogo from "./images/linkedinlogo.jpg";
 import mailLogo from "./images/mailLogo.jpg";
@@ -18,7 +18,7 @@ import { keyframes } from "@mui/material";
 import "./About.css";
 const spinAnimation = keyframes`
   0% {
-  transform: rotateY(0deg) rotateX(20deg) rotateZ(0deg);
+  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
 }
 25% {
   transform: rotateY(90deg) rotateX(10deg) rotateZ(-2deg);
@@ -30,7 +30,7 @@ const spinAnimation = keyframes`
   transform: rotateY(90deg) rotateX(10deg) rotateZ(2deg);
 }
 100% {
-  transform: rotateY(0deg) rotateX(20deg) rotateZ(0deg);
+  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
 }
 
 `;
